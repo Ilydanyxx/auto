@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="container">
+      <div class="ppp">
+        <nav class="header-navigation">
+          <a class="logo link" href="./index.html"
+            ><div class="logo-firstpart">Художники</div>
+            <div class="logo-secondpart">України</div></a
+          >
+
+          <ul class="menu">
+            <li>
+              <a class="menu-item link active" href="./index.html">Вступ</a>
+            </li>
+            <li>
+              <a class="menu-item link" href="./portfolio.html">XVIII-XIX</a>
+            </li>
+            <li>
+              <a class="menu-item link" href="./new.html">XX-XXI</a>
+            </li>
+          </ul>
+          <button class="open-menu" type="button" data-menu-open>
+            <svg class="burger-icon" width="32" height="22">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+        </nav>
+        <address>
+          <ul class="contacts">
+            <li class="contacts-item-height">
+              <a class="contacts-item link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="contacts-item-height">
+              <a class="contacts-item link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
+    </header>
+
+    <main>
+      <section class="first-section container">
+        <h1>
+          Хто випробував насолоду творчості, для того вже всі інші насолоди не
+          існують
+        </h1>
+        <p class="apc">Антон Павлович Чехов</p>
+      </section>
+
+      <section class="third-section container">
+        <h2 class="third-section-name">XVIII-XIX століття</h2>
+        <div class="new-text">
+          <p>
+            Образотворче мистецтво України у 18-21 століттях зазнало значних
+            змін та розвитку. У 18-19 століттях художники зосереджувалися на
+            портретній та історичній живописі, зокрема на зображенні козацької
+            тематики. У 20-х роках 20 століття виникла українська авангардна
+            школа, до якої належали такі художники, як Казимир Малевич та
+            Олександр Архипенко. Пізніше виникла багато художніх об'єднань, які
+            пропагували сучасне мистецтво, зокрема "Планета", "МАСХ", "Нова
+            художня група" та інші.
+          </p>
+          <p>
+            Сьогодні українське образотворче мистецтво розмаїте та представлене
+            різноманітними стилями, напрямками та техніками.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer class="container"></footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close" data-modal-close>
+          <svg class="modal-close-item" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="modal-name">Leave your contacts and we will call you back</p>
+        <form name="singup-form" autocomplete="on" action="">
+          <div class="center">
+            <div class="input-height">
+              <label class="modal-label" for="name">Name</label>
+              <div class="input-wrap">
+                <input
+                  class="modal-input"
+                  id="name"
+                  name="user-name"
+                  type="text"
+                  autofocus
+                />
+                <svg class="modal-icon" width="18" height="18">
+                  <use href="./images/icons.svg#icon-profile1"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="input-height">
+              <label class="modal-label" for="tel">Phone</label>
+              <div class="input-wrap">
+                <input
+                  class="modal-input"
+                  id="tel"
+                  name="user-tel"
+                  type="tel"
+                  autofocus
+                />
+                <svg class="modal-icon" width="18" height="18">
+                  <use href="./images/icons.svg#icon-profile2"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="input-height">
+              <label class="modal-label" for="email">Email</label>
+              <div class="input-wrap">
+                <input
+                  class="modal-input"
+                  id="email"
+                  name="user-email"
+                  type="email"
+                  autofocus
+                />
+                <svg class="modal-icon" width="18" height="18">
+                  <use href="./images/icons.svg#icon-profile3"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="comment-height">
+              <label for="comment" class="modal-label">Comment</label>
+              <textarea
+                class="modal-textarea"
+                name="user-comment"
+                id="comment"
+                placeholder="Text input"
+              ></textarea>
+            </div>
+          </div>
+          <div class="modal-field">
+            <input
+              class="modal-checkbox is-hidden"
+              id="accept"
+              name="user-accept"
+              type="checkbox"
+              value="true"
+            />
+            <label for="accept" class="policy-text">
+              I accept the terms and conditions of the
+              <a class="policy-link" href="">Privacy Policy</a></label
+            >
+
+            <button class="modal-submit" type="submit">Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
+    <div class="menu-container is-hidden container" data-menu>
+      <div class="modal-menu">
+        <button type="button" class="modal-close" data-menu-close>
+          <svg class="modal-close-item" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <ul class="modal-menu-list">
+          <li>
+            <a class="modal-menu-item link active-modal" href="./index.html"
+              >Вступ</a
+            >
+          </li>
+          <li>
+            <a class="modal-menu-item link" href="./portfolio.html"
+              >XVIII-XIX</a
+            >
+          </li>
+          <li>
+            <a class="modal-menu-item link" href="./new.html">XX-XXI</a>
+          </li>
+        </ul>
+        <address>
+          <ul class="modal-contacts-list">
+            <li class="modal-item-tel">
+              <a class="modal-contacts-tel link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li>
+              <a
+                class="modal-contacts-mail link"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+        <ul class="modal-media-list list">
+          <li class="fourth-media-item">
+            <a href="" class="fourth-media-link link">
+              <svg class="fourth-media-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="fourth-media-item">
+            <a href="" class="fourth-media-link link"
+              ><svg class="fourth-media-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-twitter"></use></svg
+            ></a>
+          </li>
+          <li class="fourth-media-item">
+            <a href="" class="fourth-media-link link"
+              ><svg class="fourth-media-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-facebook"></use></svg
+            ></a>
+          </li>
+          <li class="fourth-media-item">
+            <a href="" class="fourth-media-link link"
+              ><svg class="fourth-media-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-linkedin"></use></svg
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="./js/menu.js"></script>
+  </body>
+</html>
