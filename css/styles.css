@@ -206,7 +206,7 @@ header {
   left: 0px;
   top: 0px;
   margin: 0;
-  padding: 40px 32px 164px 32px;
+  padding: 4px 32px 164px 32px;
 
   color: #f4f4fd;
   background: #4d5ae5;
@@ -1313,4 +1313,20 @@ footer {
 }
 .new-text {
   width: calc((100% - 80px) / 1);
+}
+.car-option {
+  font-family: "Roboto";
+  font-size: 20px;
+  line-height: 1.5;
+  flex-wrap: wrap;
+  width: 264px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  letter-spacing: 0.07em;
+  margin: 10px 0 0 0;
+
+  color: #e7e9fc;
+}
 }
